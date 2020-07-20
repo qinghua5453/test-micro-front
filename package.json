@@ -1,0 +1,24 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "install:all": "yarn install:main && yarn install:sub && yarn install:vue && yarn install:react15",
+    "install:main": "cd main && yarn",
+    "install:sub": "cd sub && yarn",
+    "install:vue": "cd vue && yarn",
+    "install:react15": "cd react15 && yarn",
+    "serve:all": "npm serve:main && npm serve:sub && npm serve:vue && npm serve:react15",
+    "serve:main": "cd main && parcel index.html --port 7099",
+    "serve:sub": "cd sub && vue-cli-service serve",
+    "serve:vue": "cd vue && vue-cli-service serve",
+    "serve:react15": "cd react15 && webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "main": "file:main"
+  }
+}
