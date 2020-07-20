@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2020-07-20 10:44:32
+ * @LastEditTime: 2020-07-20 10:54:19
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: /test-micro-front/vue/src/store/modules/user.js
+ */ 
 import Vue from "vue";
 import Api from "@/utils/Api";
 import Data from "@/utils/Data";
@@ -9,7 +17,7 @@ const state = {
 const getters = {
   // 通过getPerm 过滤用户权限
   getPerm: state => str => {
-    console.log('state++++++++++++++++', state)
+    // console.log('state++++++++++++++++', state)
     let isPerm = false;
     let permArray = state.userPerm; // 后台返回[1,2,3,4,5]
     permArray.find(item => {
