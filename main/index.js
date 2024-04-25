@@ -16,6 +16,7 @@ import render from './render/VueRender'
 
 
 function genActiveRule(routerPrefix) {
+  console.log('routerPrefix', routerPrefix)
   return location => location.pathname.startsWith(routerPrefix);
 }
 
