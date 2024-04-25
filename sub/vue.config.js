@@ -12,7 +12,12 @@ module.exports = {
     headers: {
       'Access-Control-Allow-Origin': '*',
     },
+    overlay: {
+      warnings: false,
+      errors: false
+    },
   },
+  lintOnSave: false,
    configureWebpack: {
     resolve: {
       alias: {

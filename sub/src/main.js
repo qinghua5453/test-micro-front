@@ -5,8 +5,12 @@ import Vue from 'vue';
 import App from './App';
 import VueRouter from 'vue-router';
 import routes from './router';
+import 'mint-ui/lib/style.css';
+import { Picker } from 'mint-ui';
+
 
 Vue.use(VueRouter)
+Vue.component('Picker', Picker)
 
 let instance = null;
 let router = null;
